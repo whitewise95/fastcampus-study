@@ -2,7 +2,7 @@ package ch03;
 
 
 /*
- * concat ����ؼ� StringBuilder �� StringBuffer �� ����ϸ� �����޸��ּҿ��� ���� �ٲ�
+ * concat 는 새로운 메모리를 계속 참조하게된다. StringBuilder 나 StringBuffer 는 같은 메모리에 추가하게됨
  * 
  * */
 public class StringBiuderTest {

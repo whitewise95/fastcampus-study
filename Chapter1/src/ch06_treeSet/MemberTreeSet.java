@@ -6,10 +6,11 @@ import java.util.TreeSet;
 
 
 public class MemberTreeSet {
+	
 	private TreeSet<Member> treeSet;
 
 	public MemberTreeSet(){
-		treeSet = new TreeSet<Member>(new Member());
+		treeSet = new TreeSet<Member>();
 	}
 	
 	public void addMember(Member member){

@@ -2,7 +2,7 @@ package ch03;
 
 import ch02.Student;
 
-// String.concat() �� ��� �����޸𸮰� �ٲ�°� �ƴ϶� ���ο� �޷θ��� �����.
+// String.concat() 같은메모리가 아니라는것을 확인
 public class StringTest {
 
 	public static void main(String[] args) throws CloneNotSupportedException{

@@ -16,16 +16,14 @@ public class Student implements Cloneable{
 		
 	}
 
-	
-	// hashCode ���� int���� �Ǳ⶧���� studentNum�Ѱ��� �� �� �ִ�.
+
 	@Override
 	public int hashCode() {
-		
 		return studentNum;
 	}
 
 	
-	// �Ű������� ���� ��ü�� instanceof�� ����ȯ�� �������� üũ �� ��ȯ �� �� this.studentNum == std.studentNum �� Ȯ��
+	
 	@Override
 	public boolean equals(Object obj) {
 			if(obj instanceof Student) {
@@ -41,7 +39,6 @@ public class Student implements Cloneable{
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		// TODO Auto-generated method stub
 		return super.clone();
 	}
 	
