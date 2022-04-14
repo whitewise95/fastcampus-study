@@ -2,7 +2,7 @@ package ch06_treeSet;
 
 import java.util.Comparator;
 
-public class Member implements Comparator<Member>{   //Comparable<Member>
+public class Member implements Comparable<Member> {   //Comparable<Member>
 	
 	private int memberId;        //회원 아이디
 	private String memberName;   //회원 이름
@@ -49,20 +49,20 @@ public class Member implements Comparator<Member>{   //Comparable<Member>
 		return memberName + " 회원님의 아이디는 " + memberId + "입니다";
 	}
 
-//	@Override
-//	public int compareTo(Member member) {
-//		
-//		if(this.memberId > member.memberId) {
-//			return 1;
-//		} else if(this.memberId < member.memberId) {
-//			return -1;
-//		} else {
-//			return 0;
-//		}
-//	}
-
 	@Override
-	public int compare(Member o1, Member o2) {
-		return (o2.memberId - o1.memberId);
+	public int compareTo(Member member) {
+		
+		if(this.memberId > member.memberId) {
+			return 1;
+		} else if(this.memberId < member.memberId) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
+//
+//	@Override
+//	public int compare(Member o1, Member o2) {
+//		return (o2.memberId - o1.memberId);
+//	}
 }

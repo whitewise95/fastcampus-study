@@ -1,8 +1,8 @@
 package ch10_사용자Exception;
 
-class PasswordException extends IllegalAccessException{
+class PasswordException2 extends IllegalAccessException{
 	
-	public PasswordException(String msg) {
+	public PasswordException2(String msg) {
 		super(msg);
 	}
 	
@@ -12,7 +12,7 @@ class PasswordException extends IllegalAccessException{
 class Member {
 	private String password;
 
-	public void setPassword(String password) throws PasswordException{
+	public void setPassword(String password) throws PasswordException2{
 		if(password.length() > 1) {
 			throw new PasswordException("에러메세지");
 		}
@@ -31,7 +31,7 @@ public class test2 {
 		Member test = new Member();
 		try {
 			test.setPassword("ss");
-		} catch (PasswordException e) {
+		} catch (PasswordException2 e) {
 			e.printStackTrace();
 		}
 		System.out.println(test.getPassword());

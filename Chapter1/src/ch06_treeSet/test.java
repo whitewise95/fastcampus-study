@@ -2,11 +2,12 @@ package ch06_treeSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.TreeSet;
 
 public class test {
 
 	public static void main(String[] args) {
-		HashSet<Member> test = new HashSet<>();
+		TreeSet<Member> test = new TreeSet<>();
 		
 		test.add(new Member(1,"김유신"));
 		test.add(new Member(4,"김유신4"));
